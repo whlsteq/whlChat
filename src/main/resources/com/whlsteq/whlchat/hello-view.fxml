@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="236.0" prefWidth="380.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.whlsteq.chatapp.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <SplitPane dividerPositions="0.19745222929936307" orientation="VERTICAL" prefHeight="200.0" prefWidth="340.0">
+        <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="57.0" prefWidth="338.0">
+                <children>
+                    <FlowPane alignment="TOP_CENTER" prefHeight="50.0" prefWidth="338.0">
+                        <children>
+                            <TextField fx:id="txt_nickname" alignment="TOP_CENTER" prefHeight="25.0" prefWidth="278.0" promptText="Your nickname">
+                                <opaqueInsets>
+                                    <Insets right="2.0" />
+                                </opaqueInsets>
+                            </TextField>
+                            <Button fx:id="btn_nickname" mnemonicParsing="false" onAction="#take_nickname" text="Take" textAlignment="CENTER">
+                                <opaqueInsets>
+                                    <Insets left="2.0" />
+                                </opaqueInsets>
+                            </Button>
+                        </children>
+                        <opaqueInsets>
+                            <Insets top="2.0" />
+                        </opaqueInsets>
+                    </FlowPane>
+                </children></AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                <children>
+                    <TextArea fx:id="txtarea_message" prefHeight="113.0" prefWidth="338.0" />
+                    <FlowPane layoutY="119.0" prefHeight="35.0" prefWidth="340.0">
+                        <children>
+                            <TextField fx:id="txt_message" prefHeight="25.0" prefWidth="278.0" promptText="Your Message...">
+                                <opaqueInsets>
+                                    <Insets right="2.0" />
+                                </opaqueInsets>
+                            </TextField>
+                            <Button fx:id="btn_sendtxt" mnemonicParsing="false" text="Send" textAlignment="CENTER">
+                                <opaqueInsets>
+                                    <Insets left="2.0" />
+                                </opaqueInsets>
+                            </Button>
+                        </children></FlowPane>
+                </children></AnchorPane>
+        </items>
+    </SplitPane>
+</VBox>
