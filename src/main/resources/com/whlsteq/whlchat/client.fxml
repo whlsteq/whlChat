@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="236.0" prefWidth="380.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.whlsteq.whlchat.clientController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+      <children>
+         <Pane layoutY="-53.0" prefHeight="204.0" prefWidth="340.0">
+            <children>
+                    <TextArea fx:id="txtarea_message" layoutY="7.0" prefHeight="158.0" prefWidth="340.0" />
+                      <TextField fx:id="txt_message" layoutY="178.0" prefHeight="25.0" prefWidth="278.0" promptText="Your Message...">
+                          <opaqueInsets>
+                              <Insets right="2.0" />
+                          </opaqueInsets>
+                      </TextField>
+                      <Button fx:id="btn_sendtxt" layoutX="297.0" layoutY="178.0" mnemonicParsing="false" onAction="#send_message" text="Send" textAlignment="CENTER">
+                          <opaqueInsets>
+                              <Insets left="2.0" />
+                          </opaqueInsets>
+                      </Button>
+            </children>
+         </Pane>
+      </children>
+   </AnchorPane>
+</VBox>
